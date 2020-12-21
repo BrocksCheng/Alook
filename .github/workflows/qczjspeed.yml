@@ -42,8 +42,7 @@ jobs:
       - name: '运行 【汽车之家极速版】'
         if: env.QCZJ_GetUserInfoURL
         run: |
-          cd ~/QCZJSPEED
-          node /qczjspeed.js
+          node qczjspeed.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
